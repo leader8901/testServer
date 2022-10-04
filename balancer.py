@@ -18,7 +18,7 @@ loadbalancer = Flask(__name__)
 MAIL_BACKENDS = ['localhost:8081', 'localhost:8082']
 YANDEX_BACKENDS = ['localhost:9081', 'localhost:9082']
 
-config = load_configuration('loadbalancer.yaml')
+config = load_configuration('balancer.yaml')
 register = transform_backends_from_config(config)
 
 
