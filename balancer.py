@@ -3,7 +3,7 @@ from random import random
 import requests
 from flask import Flask, request
 
-from utils import (
+from conf import (
     get_healthy_server,
     healthcheck,
     load_configuration,
